@@ -22,16 +22,16 @@ function Person(name, age) {
   
   // Add a method to the Employee prototype
   Employee.prototype.jobGreet = function() {
-	console.log(`Hello, my name is ${this.name} and I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
+	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
   }
   
   // Example usage:
   window.Person = Person;
   window.Employee = Employee;
   const person1 = new Person("Alice", 30);
-  person1.greet(); 
+ // person1.greet(); 
   
-  const employee1 = new Employee("Bob", 25, "Developer");
+  const employee1 = new Employee("Bob", 25, "Manager");
   employee1.greet(); 
   employee1.jobGreet(); 
   
